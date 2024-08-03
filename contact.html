@@ -6,6 +6,65 @@
     <title>Contact - Onyekachi Amugo Dimez</title>
     <link rel="stylesheet" href="style.css">
     <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f2eade;
+            color: #0d0d0d;
+        }
+
+        header {
+            background: #a78444;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 1.5rem;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #f2eade;
+            transform: scale(1.1);
+        }
+
+        main {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        section {
+            margin: 2rem auto;
+            padding: 2rem;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
         .contact-info {
             background: #fff;
             border: 1px solid #ddd;
@@ -14,6 +73,7 @@
             margin-bottom: 1.5rem;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s, box-shadow 0.3s;
+            text-align: left;
         }
 
         .contact-info:hover {
@@ -31,6 +91,7 @@
             color: #0d0d0d;
             font-size: 1.2rem;
             margin: 0.5rem 0;
+            word-wrap: break-word;
         }
 
         .contact-info a {
@@ -51,16 +112,24 @@
             object-fit: contain;
         }
 
-        .contact-info .icon-email {
-            background: url('images/email-icon.png') no-repeat center center;
+        @media (max-width: 600px) {
+            .contact-info {
+                text-align: center;
+            }
+
+            .contact-info img {
+                margin: 0.5rem auto 0;
+            }
         }
 
-        .contact-info .icon-phone {
-            background: url('images/phone-icon.png') no-repeat center center;
-        }
-
-        .contact-info .icon-linkedin {
-            background: url('image/linkedin-icon.png') no-repeat center center;
+        footer {
+            background: #a78444;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
@@ -82,17 +151,17 @@
                 <div class="contact-info">
                     <h3>Email</h3>
                     <p><a href="mailto:onyekachi670@gmail.com">onyekachi670@gmail.com</a></p>
-                    <img src="image/dd.jpeg" alt="Email Icon" class="icon-email">
+                    <img src="image/dd.jpeg" alt="Email Icon">
                 </div>
                 <div class="contact-info">
                     <h3>Phone</h3>
-                    <p>+44 7425 516184</p>
-                    <img src="image/download.png" alt="Phone Icon" class="icon-phone">
+                    <p><a href="tel:+447425516184">+44 7425 516184</a></p>
+                    <img src="image/download.png" alt="Phone Icon">
                 </div>
                 <div class="contact-info">
                     <h3>LinkedIn</h3>
-                    <p><a href="https://linkedin.com/in/onyekachi-amugo-542620202">linkedin.com/in/onyekachi-amugo-542620202</a></p>
-                    <img src="image/downloa.png" alt="LinkedIn Icon" class="icon-linkedin">
+                    <p><a href="https://linkedin.com/in/onyekachi-amugo-542620202" target="_blank">linkedin.com/in/onyekachi-amugo-542620202</a></p>
+                    <img src="image/downloa.png" alt="LinkedIn Icon">
                 </div>
             </section>
         </div>
